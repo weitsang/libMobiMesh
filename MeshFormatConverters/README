@@ -1,0 +1,27 @@
+This file contains instructions on how to compile and run the mesh
+converter program.
+
+Building the converters
+-----------------------
+All the OpenMesh dependencies have been included and modified
+accordingly. Simply type "make" at the command prompt to compile.
+
+To clean up the directory, type "make clean".
+
+Converting from .pm to .vpm
+---------------------------
+Use the program "apmesh" for this. The command is:
+./apmesh <pm file path> -o <vpm file path>
+
+The pm file should end with .pm extension, and the desired output
+vpm file path should end with the .vpm extension.
+
+Converting from .vpm to .tvpm or .tvpm64
+----------------------------------------
+Use the program "cpmesh" for this. The command is:
+./cpmesh <vpm file path> -o <tvpm file path>
+
+The vpm file path should end with either .vpm or 64.vpm, and the
+tvpm file path should end with either .tvpm or .tvpm64 respectively.
+The .vpm and .tvpm extensions refer to a 32 bit vertex ID mesh format,
+and the 64.vpm and .tvpm64 refer to a 64 bit vertex ID mesh format.
