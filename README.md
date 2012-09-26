@@ -82,3 +82,8 @@ The project is organized into the following groups:
     supporting files
   - TVPMRenderer: Source code/headers, nib and supporting files for
     TVPMRenderer target.
+=======
+libMobiMesh
+===========
+
+A software library for rendering progressive meshes on iOS devices.
